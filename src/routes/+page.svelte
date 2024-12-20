@@ -1,2 +1,12 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
+<script>
+    let {data} = $props()
+</script>
+
+<div class="flex justify-center items-center h-[100vh]">
+<h1 class="text-lg text-green-200">
+    hello
+</h1>
+<p class="">
+    my name is {data.name} and age is {data.age}
+</p>
+</div>
